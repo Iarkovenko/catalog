@@ -1,0 +1,6 @@
+.navbar-brand {
+    font-family: 'CormorantUnicase';
+    font-size: 28px;
+    color: $menu-link;
+    text-transform: uppercase;
+}
