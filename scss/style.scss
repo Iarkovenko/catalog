@@ -11,13 +11,38 @@
     font-size: 28px;
     color: $menu-link;
     text-transform: uppercase;
+    margin-right: 79px;
 }
 
-#top-panel a {
-    font-family: 'RobotoLigth';
-    font-size: 12px;
+.navbar-main {
+    flex-basis: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    & a:focus {
+        border-bottom: 1px solid $menu-link;
+    }
+}
+
+.dropdown-toggle::after {
+    line-height: 1.5;
+    margin-left: 1.255em;
+    vertical-align: middle;
+}
+
+#top-panel {
     color: $menu-link;
-    text-transform: uppercase;
+
+    & a {
+        font-family: 'RobotoLigth';
+        font-size: 12px;
+        color: $menu-link;
+        text-transform: uppercase;
+    }
+}
+
+.nav-icon {
+    fill: #dddddd;
 }
 
 .filters-bar {
@@ -111,4 +136,94 @@
     font-size: 12px;
     color: $card-show-more;
     transition: all 0.23s ease-in-out;
+}
+
+.show-more__link:hover {
+    text-decoration: underline;
+}
+
+.footer-row {
+    max-width: 1450px;
+    justify-content: space-between;
+
+    h2 {
+        font-family: 'RobotoMedium';
+        font-size: 18px;
+        color: #000000;
+        text-transform: uppercase;
+        margin-bottom: 43px;
+    }
+
+    p {
+        font-family: 'RobotoMedium';
+        font-size: 12px;
+        color: #333333;
+        line-height: 21px;
+    }
+}
+
+.nav-footer a {
+    display: inline-block;
+    padding: 0;
+    font-family: 'RobotoMedium';
+    font-size: 12px;
+    color: #333333;
+    line-height: 21px;
+
+    &:focus {
+        border-bottom: 1px solid #333333;
+    }
+}
+
+.subscribe-btn {
+    max-width: 200px;
+    height: 45px;
+    background-color: #333333;
+    font-family: 'RobotoMedium';
+    font-size: 12px;
+    color: #ffffff;
+    align-items: center;
+}
+
+.cursor {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sbcr {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.nav-icon--cursor {
+    fill: #ffffff;
+}
+
+.foot-top {
+    background-color: #efefef;
+}
+
+.foot-info {
+    padding-top: 104px;
+    padding-bottom: 77px;
+}
+
+.nav-icon--footer {
+    fill: #333333;
+}
+
+.foot {
+    background-color: #222222;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'RobotoMedium';
+    font-size: 12px;
+    color: #777777;
+
+    p {
+        margin: 0;
+    }
 }
